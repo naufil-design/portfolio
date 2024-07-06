@@ -44,7 +44,7 @@ p {
   background-image: url('bg.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center;
   color: #fff;
 }
 
