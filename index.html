@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <title>Naufil design</title>
+</head>
+<body>
+  <button id="debug-button" onclick="toggleDebug()" style="position:fixed;display:none">show debug</button>
+  
+  <button onclick="document.querySelector('.side-navtab').classList.toggle('active');
+  document.querySelector('.side-navtab-bg').classList.toggle('active');
+  document.querySelector('body').classList.toggle('sidenav-open');" class="display-none-800px-w side-navtab-button icon ion-md-menu"></button>
+    <div onclick="document.querySelector('.side-navtab').classList.remove('active'); document.querySelector('.side-navtab-bg').classList.remove('active');" class="side-navtab-bg"></div>
+    
+    <nav class="l-screen-nav">
+      <a href="#social-media-section">kontak saya</a>
+      <a href="#fun-section">just for fun...</a>
+      <a href="#project-section">proyek saya</a>
+    </nav>
+    
+    <div class="side-navtab">
+      <ul class="navtab-elements">
+        <li><a href="#social-media-section">kontak saya</a></li>
+      <li><a href="#fun-section">just for fun...</a></li>
+        <li><a href="#project-section">proyek saya</a></li>
+      </ul>
+    </div>
+  
+  <section class="portofolio-item title-section" style="height:100vh">
+    <h1 class="title-text">Naufil Design</h1>
+    <p class="introduction">Hai, namaku Naufil.<br>aku adalah programmer web designer,<br> bahasa pemrograman yg ku ketahui untuk sekarang adalah<br><i class="icon ion-logo-html5"> html</i><br><i class="icon ion-logo-css3"> css</i><br><i class="icon ion-logo-javascript"> javascript</i></p>
+  </section>
+  <section id="fun-section" class="t-align-center portofolio-item" style="background-color:#000;color:#fff;">
+    <h3>klik?</h3>
+    <span style="display: block; width: 100%;">
+    <button class="cool-button">klik aku!</button>
+    <button class="cool-button">klik aku!</button>
+    </span>
+    
+  </section>
+  <section id="project-section" class="t-align-center" style="background-image:linear-gradient(to bottom, #000, #222);color:#fff;padding:10px;box-sizing:border-box:min-height:400px">
+    <h2>proyek ku</h2>
+    <p>kosong...</p>
+  </section>
+  
+  <div id="social-media-section">
+    <h3>kontak saya</h3>
+    <span>
+      <a href="https://m.youtube.com/channel/UCoY8TkS0Su8VDzXHDmSN5bQ" class="icon ion-logo-youtube"></a>
+      <a href="https://github.com/Bitzells" class="icon ion-logo-github"></a>
+      <a href="https://wa.me/08155176763" class="icon ion-logo-whatsapp"></a>
+      <a href="https://www.instagram.com/fil_cuy?igsh=MW9ha3U5azV0bWh0bw==" class="icon ion-logo-instagram"></a>
+      </span>
+      
+  </div>
+  
+  
+  
+  <script>
+    let debugMode = false;
+
+        function toggleDebug() {
+            debugMode = !debugMode;
+            const allElements = document.querySelectorAll('*');
+            allElements.forEach(element => {
+                if (debugMode) {
+                    // Save original outline if not already saved
+                    if (!element.hasAttribute('data-original-outline')) {
+                        element.setAttribute('data-original-outline', element.style.outline || '');
+                    }
+                    element.style.outline = '1px solid #f00';
+                } else {
+                    // Restore original outline
+                    element.style.outline = element.getAttribute('data-original-outline');
+                }
+            });
+
+            document.getElementById('.debug-button').textContent = debugMode ? 'Hide Debug' : 'Show Debug';
+        }
+  </script>
+</body>
+</html>
