@@ -205,10 +205,6 @@ p {
 
 .desktop-option {
   display:none;
-  background-color:#222;
-  color:#fff;
-  padding: 10px;
-  height: 50px;
 }
 
 .desktop-option a {
