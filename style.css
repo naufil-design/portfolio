@@ -203,9 +203,8 @@ p {
   margin-inline: 20px;
 }
 
-.description {
-  padding: 10px;
-  text-align: center;
+.l-screen-only {
+  display:none;
 }
 
 @media screen and (min-width: 766px) {
@@ -237,4 +236,6 @@ p {
   .l-screen-nav {
     display: flex;
   }
+  .l-screen-only {
+    display:block;
 }
