@@ -8,23 +8,25 @@
   <title>Naufil design</title>
 </head>
 <body>
-  <button id="debug-button" onclick="toggleDebug()" style="position:fixed;display:none">show debug</button>
-  
   <button onclick="document.querySelector('.side-navtab').classList.toggle('active');
   document.querySelector('.side-navtab-bg').classList.toggle('active');
   document.querySelector('body').classList.toggle('sidenav-open');" class="display-none-800px-w side-navtab-button icon ion-md-menu"></button>
     <div onclick="document.querySelector('.side-navtab').classList.remove('active'); document.querySelector('.side-navtab-bg').classList.remove('active');" class="side-navtab-bg"></div>
     
     <nav class="l-screen-nav">
+      <button id="debug-button" onclick="toggleDebug()">show debug</button>
+      <a href="test.html">tes responsifitas</a>
       <a href="#social-media-section">kontak saya</a>
-      <a href="#fun-section">just for fun...</a>
+      <a href="#fun-section">hanya untuk hiburan</a>
       <a href="#project-section">proyek saya</a>
     </nav>
     
     <div class="side-navtab">
       <ul class="navtab-elements">
+        <li><a id="debug-button" onclick="toggleDebug()">show debug</a></li>
+        <li><a href="test.html">tes responsifitas</a></li>
         <li><a href="#social-media-section">kontak saya</a></li>
-      <li><a href="#fun-section">just for fun...</a></li>
+      <li><a href="#fun-section">hanya untuk hiburan</a></li>
         <li><a href="#project-section">proyek saya</a></li>
       </ul>
     </div>
