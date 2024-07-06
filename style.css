@@ -203,8 +203,14 @@ p {
   margin-inline: 20px;
 }
 
-.l-screen-only {
+.desktop-option {
   display:none;
+  background-colot:#222;
+  color:#fff;
+}
+
+.desktop-option a {
+  margin-inline: 20px;
 }
 
 @media screen and (min-width: 766px) {
@@ -236,6 +242,6 @@ p {
   .l-screen-nav {
     display: flex;
   }
-  .l-screen-only {
+  .desktop-option {
     display:block;
 }
