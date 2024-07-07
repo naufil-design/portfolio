@@ -203,14 +203,6 @@ p {
   margin-inline: 20px;
 }
 
-.desktop-option {
-  display:none;
-}
-
-.desktop-option a {
-  margin-inline: 20px;
-}
-
 @media screen and (min-width: 766px) {
   .side-navtab-button {
     width: 55px;
@@ -240,6 +232,4 @@ p {
   .l-screen-nav {
     display: flex;
   }
-  .desktop-option {
-    display:block;
 }
