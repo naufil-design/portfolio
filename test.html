@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+            transform-origin:center top;
+            box-sizing: border-box;
+        }
+        .controls {
+            align-items: center;
+            width: 100%;
+        }
+        .range-controls {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        .buttons {
+            display: flex;
+            flex-wrap: no-wrap;
+            margin-top: 10px;
+        }
+        button {
+            color: #fff;
+            background-color: #0af;
+            border-radius: 10px;
+            margin: 3px;
+            padding: 10px 9px;
+            cursor: pointer;
+            border: 1px solid #0df;
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Test</h1>
+    <div class="controls">
+        <div class="range-controls">
+            <label for="widthRange">Set Width: <span id="widthValue">320px</span></label>
+            <input type="range" id="widthRange" min="320" max="1920" value="320" oninput="updateDimensions()" style="width: 100%;">
+        </div>
+        <div class="range-controls">
+            <label for="heightRange">Set Height: <span id="heightValue">400px</span></label>
+            <input type="range" id="heightRange" min="400" max="1080" value="400" oninput="updateDimensions()" style="width: 100%;">
+        </div>
+        <div class="buttons">
+            <button onclick="setDevice('mobile')">Mobile</button>
+            <button onclick="setDevice('tablet')">Tablet</button>
+            <button onclick="setDevice('desktop')">Desktop</button>
+            <button onclick="setAspectRatio('16:9')">16:9</button>
+            <button onclick="setAspectRatio('9:16')">9:16</button>
+        </div>
+    </div>
+    <iframe id="responsiveFrame" src="index.html" frameborder="0"></iframe>
+
+    <script>
+        const frame = document.getElementById('responsiveFrame');
+        const widthValue = document.getElementById('widthValue');
+        const heightValue = document.getElementById('heightValue');
+        const widthRange = document.getElementById('widthRange');
+        const heightRange = document.getElementById('heightRange');
+
+        function updateDimensions() {
+            const width = widthRange.value;
+            const height = heightRange.value;
+            frame.style.width = width + 'px';
+            frame.style.height = height + 'px';
+            const maxDimension = Math.max(width, height);
+            const scale = 320 / maxDimension;
+            frame.style.transform = `scale(${scale})`;
+
+            widthValue.textContent = width + 'px';
+            heightValue.textContent = height + 'px';
+        }
+
+        function setDevice(device) {
+            let width, height;
+            switch(device) {
+                case 'mobile':
+                    width = 375; // Typical mobile width
+                    height = 667; // Typical mobile height
+                    break;
+                case 'tablet':
+                    width = 768; // Typical tablet width
+                    height = 1024; // Typical tablet height
+                    break;
+                case 'desktop':
+                    width = 1366; // Typical desktop width
+                    height = 768; // Typical desktop height
+                    break;
+            }
+            setDimensions(width, height);
+        }
+
+        function setAspectRatio(ratio) {
+            let width, height;
+            if (ratio === '16:9') {
+                width = 1280; // Typical 16:9 width
+                height = 720; // Typical 16:9 height
+            } else if (ratio === '9:16') {
+                width = 720; // Typical 9:16 width
+                height = 1280; // Typical 9:16 height
+            }
+            setDimensions(width, height);
+        }
+
+        function setDimensions(width, height) {
+            frame.style.width = width + 'px';
+            frame.style.height = height + 'px';
+
+            const maxDimension = Math.max(width, height);
+            const scale = 320 / maxDimension;
+            frame.style.transform = `scale(${scale})`;
+
+            widthRange.value = width;
+            heightRange.value = height;
+            widthValue.textContent = width + 'px';
+            heightValue.textContent = height + 'px';
+        }
+    </script>
+</body>
+</html>

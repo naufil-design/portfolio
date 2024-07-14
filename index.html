@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="portfolio Naufil Design">
+    <title>Naufil Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="icon" href="./images/logo.png" type="image/png">
+</head>
+<body>
+    <div class="l-b-e-outer">
+        <div class="login-before-enter">
+            <label for="nameInput">Masukkan Nama Anda:</label>
+            <input type="text" id="nameInput" placeholder="masukkan nama anda" autocomplete="off">
+            <p id="warningText" class="warning-t">bro, Itu bukan Nama lu kan?</p>
+            <p id="what-the" class="what-the"></p>
+            <button id="enter" onclick="letsBegin()">masuk</button>
+        </div>
+    </div>
+    
+    <!-- ----M A I N   C O N T E N T---- -->
+    <div id="main-content">
+      
+      <button onclick="document.querySelector('.side-navtab').classList.toggle('active');
+  document.querySelector('.side-navtab-bg').classList.toggle('active');
+  document.querySelector('body').classList.toggle('sidenav-open');" class="side-navtab-button icon ion-md-menu" mobile-only></button>
+    <div onclick="document.querySelector('.side-navtab').classList.remove('active'); document.querySelector('.side-navtab-bg').classList.remove('active');" class="side-navtab-bg" mobile-only></div>
+      <div class="side-navtab" mobile-only>
+        <div class="theme">
+        <input type="checkbox" id="toggle-theme" class="theme-toggle">
+        <label for="toggle-theme" class="theme-label">
+          <span class="circle-toggle-theme icon ion-md-moon"></span>
+        </label>
+      </div>
+      <!-- end:theme -->
+      
+      <ul class="navtab-elements">
+      <li><a href="test.html">tes responsifitas</a></li>
+        <li><a onclick="nama = ''; localStorage.setItem('nama', nama)" href="./index.html">setel ulang nama</a></li>
+        <li><a href="#contact">kontak aku</a></li>
+      </ul>
+    </div>
+      <nav  class="desktop-nav" desktop-only>
+        <a href="./test.html">tes responsifitas</a>
+        <a onclick="nama = ''; localStorage.setItem('nama', nama)" href="./index.html">setel ulang nama</a>
+        <a href="#contact">kontak aku</a>
+        <div class="theme-desktop">
+        <input type="checkbox" id="toggle-theme-desktop" class="theme-toggle-desktop">
+        <label for="toggle-theme-desktop" class="theme-label-desktop">
+          <span class="circle-toggle-theme-desktop icon ion-md-moon"></span>
+        </label>
+      </div>
+      <!-- end:theme -->
+      </nav>
+        <div class="title">
+            <div class="title-texts-container">
+            <h1 style="font-family:akira;font-size: 7vw;z-index:1;">Naufil Design</h1>
+            <h1 class="second-title-texts" style="font-family:akira-outline;font-size: 7vw;user-select: none;-webkit-user-select: none;-ms-user-select: none;-moz-user-select: none;">Naufil Design</h1>
+            </div>
+            <h3 id="introducing"></h3>
+        </div>
+        <!-- end:title -->
+        
+        <div class="segment-item cart">
+          <h3>tentang aku</h3>
+          <p>freelance: FrontEnd Dev.<br>Skills:</p>
+          <ul>
+            <li>desain website responsif.</li>
+            <li>UI./UX. Design</li>
+            <li>advance beginner FrontEnd Dev.</li>
+          </ul>
+          <hr>
+          <p><br>bahasa pemrograman yang aku kuasai:</p>
+          <ul>
+            <li class="icon ion-logo-html5"> Html</li>
+            <li class="icon ion-logo-css3"> Css</li>
+            <li class="icon ion-logo-javascript"> JavaScript</li>
+            <li class="icon ion-logo-python"> Python</li>
+          </ul>
+          <p><br>Device untuk coding:<br><a href="https://m.gsmarena.com/oppo_f5-8889.php" class="ion-logo-android"> android(Oppo F5).</a></p>
+          <p><br>aplikasi untuk coding:<br><a href="https://play.google.com/store/apps/details?id=com.foxdebug.acodefree">Acode - code editor | FOSS</a></p>
+          <p><br>aplikasi yg dipake untuk mengecek bug website:<br><a href="">ChatGPT</a></p>
+        </div>
+        
+        <div class="segment-item">
+          <h2>proyek yg sedang ku kerjakan</h2>
+          <p>kosong...</p>
+        </div>
+        <!-- end:project on work -->
+        <div class="segment-item">
+          
+        </div>
+    <div id="contact">
+      <p>kontak aku</p>
+      <span class="social-media">
+        <a href="https://m.youtube.com/channel/UCoY8TkS0Su8VDzXHDmSN5bQ" class="sosmed-item icon ion-logo-youtube"></a>
+      <a href="https://github.com/Bitzells" class="sosmed-item icon ion-logo-github"></a>
+      <a href="https://wa.me/08155176763" class="sosmed-item icon ion-logo-whatsapp"></a>
+      <a href="https://www.instagram.com/fil_cuy?igsh=MW9ha3U5azV0bWh0bw==" class="sosmed-item icon ion-logo-instagram"></a>
+      </span>
+    </div>
+    <!-- end:contact -->
+    </div>
+    <!-- end:main content -->
+    <script src="main.js" defer=""></script>
+</body>
+</html>
