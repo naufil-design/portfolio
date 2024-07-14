@@ -59,6 +59,7 @@ body {
   animation: background linear;
   animation-timeline: scroll();
   overflow-x: hidden;
+  height: 100vh;
 }
 
 .l-b-e-outer {
