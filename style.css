@@ -47,11 +47,7 @@ a:hover:not(#contact a.icon) {
   border-radius: 3px;
 }
 body {
-  background-image: url('./images/bg.jpg');
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background-color: var(--col-theme);
   font-family: Arial, sans-serif;
   color: var(--invert-col-theme);
   transition-property: background-image, color;
