@@ -16,7 +16,7 @@
             document.documentElement.style.setProperty('--col-theme', '#fff');
             document.documentElement.style.setProperty('--col1-theme', '#ddd');
             document.documentElement.style.setProperty('--invert-col-theme', '#000');
-            document.body.style.backgroundImage = 'url(./images/bg1.jpg)';
+            document.body.style.backgroundColor = 'var(--col-theme)';
             circleToggle.style.backgroundColor = '#10a9ff';
             circleToggleD.style.backgroundColor = '#10a9ff';
             circleToggle.classList.remove('ion-md-moon');
@@ -29,7 +29,7 @@
             document.documentElement.style.setProperty('--col-theme', '#333');
             document.documentElement.style.setProperty('--col1-theme', '#222');
             document.documentElement.style.setProperty('--invert-col-theme', '#fff');
-            document.body.style.backgroundImage = 'url(./images/bg.jpg)';
+            document.body.style.backgroundColor = 'var(--col-theme)';
             circleToggle.style.backgroundColor = '#007';
             circleToggleD.style.backgroundColor = '#007';
             circleToggle.classList.remove('ion-md-sunny');
