@@ -379,3 +379,6 @@ input[type='text']:placeholder-shown {
   border-top: 0.5px solid #fff8;
   border-bottom: 0.5px solid #fff8;
 }
+.workitem p {
+  color: #555;
+}
