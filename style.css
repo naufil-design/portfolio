@@ -43,7 +43,6 @@ a:not(:hover, a.icon, .desktop-nav a) {
 }
 a:hover:not(#contact a.icon) {
   color: #0ff;
-  background-color:#fff3;
   border-radius: 3px;
 }
 body {
