@@ -386,4 +386,5 @@ input[type='text']:placeholder-shown {
 }
 .workitem h3 a {
   color: #47f;
+  text-decoration-line: underline;
 }
