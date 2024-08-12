@@ -377,7 +377,6 @@ input[type='text']:placeholder-shown {
 }
 .workitem {
   border-top: 0.5px solid var(--invert-col-theme);
-  border-bottom: 0.5px solid var(--invert-col-theme);
 }
 .workitem .tgl {
   translate: 0 -15px;
