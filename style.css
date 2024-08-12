@@ -333,6 +333,7 @@ input[type='text']:placeholder-shown {
   color: var(--invert-col-theme);
   padding: 10px;
   border-bottom: 1px solid var(--invert-col-theme);
+  -webkit-user-drag: none;
 }
 
 .side-navtab .navtab-elements li a:hover {
