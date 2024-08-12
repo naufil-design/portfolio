@@ -379,7 +379,7 @@ input[type='text']:placeholder-shown {
   border-top: 0.5px solid var(--invert-col-theme);
   border-bottom: 0.5px solid var(--invert-col-theme);
 }
-.workitem p:first-child {
+.workitem p {
   color: #aaa;
   font-size: 7pt;
 }
