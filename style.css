@@ -377,7 +377,7 @@ input[type='text']:placeholder-shown {
   text-decoration-line: underline;
 }
 .work {
-max-height: 200px;
+max-height: 250px;
 overflow-y: auto;
 border-block: 1px solid var(--invert-col-theme);
 }
