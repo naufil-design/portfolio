@@ -17,17 +17,6 @@
   src: url("./Rosan.ttf") format(truetype);
 }
 
-@keyframes backIn-scale {
-  0% {scale: 1 1;}
-  45%, 55% {scale: 1 1.1;}
-  50% {scale: 1 1.2;}
-  100% {scale: 1 0;}
-}
-
-@keyframes background {
-  to {background-position: center}
-}
-
 
 ::selection {
   background-color: var(--invert-col-theme);
@@ -390,7 +379,7 @@ input[type='text']:placeholder-shown {
 .work {
 max-height: 200px;
 overflow-y: auto;
-border-block: 1px solid var(--inv-theme);
+border-block: 1px solid var(--invert-col-theme);
 }
 .work h2:first-child {
 position: sticky;
