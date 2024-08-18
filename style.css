@@ -390,4 +390,9 @@ input[type='text']:placeholder-shown {
 .work {
 max-height: 200px;
 overflow-y: auto;
+border-block: 1px solid var(--inv-theme);
+}
+.work h3:first-child {
+position: sticky;
+top:0;
 }
