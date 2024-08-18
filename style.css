@@ -176,7 +176,6 @@ input[type='text']:placeholder-shown {
   border-left: 5px solid #0df;
   border-radius: 5px;
   outline: 1px solid var(--invert-col-theme);
-  backdrop-filter: blur(20px);
   padding: 5px;
 }
 
