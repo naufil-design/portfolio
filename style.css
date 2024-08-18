@@ -389,4 +389,5 @@ input[type='text']:placeholder-shown {
 }
 .work {
 max-height: 200px;
+overflow-y: auto;
 }
