@@ -381,6 +381,7 @@ overflow-y: auto;
 border-block: 1px solid var(--invert-col-theme);
 }
 .work h2:first-child {
+z-index:2;
 position: sticky;
 top:0;
 background-image: linear-gradient(to right, var(--col1-theme), transparent);
