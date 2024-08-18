@@ -384,6 +384,9 @@ input[type='text']:placeholder-shown {
   font-size: 9pt;
 }
 .workitem h3 a {
-  color: #40a9f0;
+  color: #40d9f0;
   text-decoration-line: underline;
+}
+.work {
+max-height: 200px;
 }
