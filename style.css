@@ -12,11 +12,6 @@
   font-family: 'akira-outline';
   src: url("./akiraExpandedOutline.otf") format(opentype);
 }
-@font-face {
-  font-family: 'rosan';
-  src: url("./Rosan.ttf") format(truetype);
-}
-
 
 ::selection {
   background-color: var(--invert-col-theme);
