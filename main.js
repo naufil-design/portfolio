@@ -114,7 +114,7 @@
         const nama = nameInput.value.toLowerCase();
         localStorage.setItem('nama', nama);
 
-        loginContent.style.opacity = '0';
+        loginContent.style.opacity = 0;
 
         setTimeout(() => {
             loginContent.style.display = 'none';
