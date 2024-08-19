@@ -170,11 +170,11 @@ input[type='text']:placeholder-shown {
 .about {
   background-color: var(--col1-theme);
   border-radius: 8px;
-  padding: 5px;
+  padding: 10px;
 }
 
 .theme {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 150px;
   margin: 10px;
