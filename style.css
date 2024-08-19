@@ -375,10 +375,10 @@ overflow-y: auto;
 border-block: 1px solid var(--invert-col-theme);
 }
 .work h2:first-child {
+  text-align: right;
 z-index: 1;
 position: sticky;
 top:0;
-background: linear-gradient(to right, var(--col1-theme), transparent);
 }
 .programming-language {
   padding-block: 5px;
