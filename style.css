@@ -167,8 +167,8 @@ input[type='text']:placeholder-shown {
   font-family: georgia;
 }
 
-.cart {
-  border-left: 5px solid #0df;
+.about {
+  background-color: var(--col1-theme);
   border-radius: 5px;
   outline: 1px solid var(--invert-col-theme);
   padding: 5px;
@@ -286,9 +286,8 @@ input[type='text']:placeholder-shown {
 }
   
 .side-navtab {
-  clip-path: circle(0% at 100% 50%);
   position: fixed;
-  right: 0;
+  right: -100%;
   top: 0;
   z-index: 99;
   padding: 10px;
@@ -301,7 +300,7 @@ input[type='text']:placeholder-shown {
   overflow-x: hidden;
 }
 .side-navtab.active {
-  clip-path: circle(100%);
+  right:0;
   background-color: var(--col1-theme);
 }
 .side-navtab .navtab-elements {
@@ -376,8 +375,8 @@ overflow-y: auto;
 border-block: 1px solid var(--invert-col-theme);
 }
 .work h2:first-child {
-z-index: 2;
+z-index: 1;
 position: sticky;
 top:0;
-background-image: linear-gradient(to right, var(--col1-theme), transparent);
+background: linear-gradient(to right, var(--col1-theme), transparent);
 }
