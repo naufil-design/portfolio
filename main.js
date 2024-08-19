@@ -114,7 +114,7 @@
         const nama = nameInput.value.toLowerCase();
         localStorage.setItem('nama', nama);
 
-        loginContent.style.animation = 'backIn-scale .15s forwards';
+        loginContent.style.opacity = '0';
 
         setTimeout(() => {
             loginContent.style.display = 'none';
@@ -129,7 +129,7 @@
             setTimeout(() => {
                 mainContent.style.opacity = '1';
             }, 500);
-        }, 150);
+        }, 300);
     }
 
     // Event listener untuk tombol 'Masuk'
