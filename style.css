@@ -379,5 +379,5 @@ border-block: 1px solid var(--invert-col-theme);
 z-index: 2;
 position: sticky;
 top:0;
-background-image: linear-gradient(to right, transparent, var(--col1-theme), transparent);
+background-image: linear-gradient(to right, var(--col1-theme), transparent);
 }
