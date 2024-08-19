@@ -41,6 +41,7 @@ body {
 }
 
 .l-b-e-outer {
+  display: none;
   width: 100%;
   height: 100vh;
   position: relative;
@@ -384,4 +385,38 @@ top:0;
   padding-block: 5px;
   padding-left: 10px;
   margin:0;
+}
+details {
+    position: relative;
+    margin: 1rem 0;
+    border-radius: 8px;
+    background: var(--col-theme);
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+summary {
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    background: #4af;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s ease;
+}
+
+summary:hover {
+    background: #25f;
+}
+
+summary::marker {
+    content: '▶';;
+    position: absolute;
+    right:0;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+details[open] summary::marker {
+    content: '▼'; 
 }
