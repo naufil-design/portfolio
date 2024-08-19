@@ -412,11 +412,12 @@ summary:hover {
 summary::marker {
     content: '▶';;
     position: absolute;
+    top:0;
     right:0;
     font-size: 0.8rem;
     color: #666;
 }
 
 details[open] summary::marker {
-    content: '▼'; 
+    content: '▼';;
 }
