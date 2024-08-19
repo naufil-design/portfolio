@@ -169,8 +169,7 @@ input[type='text']:placeholder-shown {
 
 .about {
   background-color: var(--col1-theme);
-  border-radius: 5px;
-  outline: 1px solid var(--invert-col-theme);
+  border-radius: 8px;
   padding: 5px;
 }
 
