@@ -91,13 +91,13 @@ body {
 }
 
 .about {
-  color: #fff;
+  color: var(--invert-col-theme);
   font-weight: 600;
   background-color: var(--col1-theme);
   border-radius: 10px;
   padding-inline: 10px;
   padding-block: 2px;
-  transition: background-color 0.4s ease;
+  transition: 0.4s ease;
 }
 
 .theme {
