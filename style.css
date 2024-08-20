@@ -87,7 +87,7 @@ body {
 #introducing {
   max-inline-size: 600px;
   margin-left: 10px;
-  font-family: georgia;
+  font-family: monospace
 }
 
 .about {
@@ -107,7 +107,7 @@ body {
   margin: 10px;
   display: inline-block;
   width: 45px;
-  height: 34px;
+  height: 24px;
 }
 .theme-desktop {
   position: fixed;
@@ -116,7 +116,7 @@ body {
   margin: 10px;
   display: inline-block;
   width: 45px;
-  height: 34px;
+  height: 24px;
 }
 
 .theme-toggle, .theme-toggle-desktop {
@@ -173,11 +173,9 @@ body {
 }
 
 #contact {
-  color: var(--invert-col-theme);
   text-align: center;
-  background-color: var(--col1-theme);
+  background-color: #222;
   border-radius: 10px;
-  border: 1px solid var(--invert-col-theme);
   width: 100%;
   height: 150px;
   padding: 10px;
@@ -185,7 +183,7 @@ body {
   transition: .4s ease;
 }
 #contact .icon {
-  color: var(--invert-col-theme);
+  color: #fff;
   font-size: 25px;
   margin-inline: 10px;
   transition: .4s ease;
@@ -193,6 +191,15 @@ body {
 }
 #contact .icon:hover {
   font-size: 35px;
+}
+#contact a.ion-logo-youtube:hover {
+  color: #f00;
+}
+#contact a.ion-logo-whatsapp:hover {
+  color: #0c0;
+}
+#contact .ion-logo-instagram:hover {
+  color: #f6f;
 }
 
 .side-navtab-button {
@@ -287,18 +294,20 @@ body {
   border-top: 0.5px solid var(--invert-col-theme);
 }
 .workitem .tgl {
-  margin-top:0;
-  margin-bottom: 5px;
+  margin:0;
   color: #aaa;
   font-size: 9pt;
 }
 .workitem p {
-  margin-top: 0;
+  margin-top: 20px;
   margin-bottom: 15px;
 }
 .workitem h3 a {
   color: #40d9f0;
   text-decoration-line: underline;
+}
+.work {
+  font-family: Monospace;
 }
 .workitem h3 {
   margin-top: 15px;
@@ -310,23 +319,24 @@ body {
   padding-left: 10px;
   margin:0;
 }
-.not-important {
+.my-fav-songs {
     position: relative;
     margin: 1rem 0;
     border-radius: 12px;
-    background-color: #555;
+    background-color: #eee;
     overflow: hidden;
     transition: 0.3s ease;
+    outline: 1px solid #333;
 }
 
-.not-important .playlists {
+.my-fav-songs .playlists {
   display:flex;
   padding: 15px;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 }
 
-.not-important .playlists  iframe {
+.my-fav-songs .playlists  iframe {
   scale: 0.99;
   scroll-snap-align:center;
 }
@@ -337,13 +347,13 @@ summary {
     padding: 1rem;
     font-size: 1rem;
     font-weight: bold;
-    color: #fff;
-    background: #555;
+    color: #000;
+    background: #eee;
 }
 
 summary:active {
-    background: #999;
+    background: #fff;
 }
-.not-important:has(summary:active) {
-    background: #999;
+.my-fav-songs:has(summary:active) {
+    background: #fff;
 }
