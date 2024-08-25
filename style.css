@@ -315,7 +315,9 @@ body {
   margin-bottom: 0;
 }
 .programming-language {
-  font-family: Segoe UI;
+  color: #fff;
+  font-family: Monospace;
+  font-weight: 700;
   font-size: 15pt;
   padding-block: 20px;
   padding-left: 10px;
