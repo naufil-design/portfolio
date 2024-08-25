@@ -71,6 +71,7 @@ body {
   flex-direction: column;
   position:relative;
   height: 100vh;
+  margin-top: 50px;
 }
 .title-texts-container {
   display: grid;
@@ -84,10 +85,10 @@ body {
   grid-area: stack;
   transform: translate(calc(3vw - 5px), calc(2vw - 3px));
 }
-#introducing {
+.introducing {
   max-inline-size: 600px;
   margin-left: 10px;
-  font-family: monospace
+  font-family: monospace;
 }
 
 .about {
@@ -284,6 +285,10 @@ body {
   text-decoration: none;
 }
 @media screen and (min-width:999px) {
+  .introducing {
+    font-size: 17pt;
+    margin-left: 100px;
+  }
   *[desktop-only] {
     display: inline-block;
   }
